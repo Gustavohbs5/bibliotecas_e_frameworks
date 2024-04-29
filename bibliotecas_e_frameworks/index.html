@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>
+        Bibliotecas E Frameworks
+    </title>
+    <!--MetaDados-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icone-->
+    <link href="./img/Logotipotransparente.png" rel="shortcut icon" type="image/x-icon">
+    <!--Google icons-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!--Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Unbounded:wght@500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Inter:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+3:wght@200;300;400;500;600;700&family=Unbounded:wght@500&display=swap"
+        rel="stylesheet">
+    <script defer src="index.js"></script>
+    <!--Script tailwindcss-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+            background-color: rgb(34, 34, 34);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            width: 5px;
+            background-color: rgb(54, 0, 90);
+            border: 2px solid rgb(54, 0, 90);
+            border-radius: 50px;
+        }
+    </style>
+    <script>
+        //CONFIGURAÇÕES DO TAILWIND
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                screens: {
+                    'phone': '640px',
+                    'phone-2': '785px',
+                    'nav': '1070px',
+                    'computer': '1280px',
+                },
+                extend: {
+                    colors: {
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body id="body" class="w-screen h-auto bg-zinc-950 overflow-x-hidden font-[Poppins]">
+    <header id="header" class="fixed top-0 w-screen bg-black/80 bg- h-24
+     flex items-center justify-between pl-4">
+        <h2 class="text-2xl font-bold text-white">
+            Bibliotecas e frameworks</h2>
+        <nav class="flex flex-row items-center w-1/2 mx-8">
+            <ul class="flex justify-start text-lg">
+                <li class="px-2">
+                    <a class="text-zinc-200 rounded-md hover:text-yellow-500 transition-colors block" href="teste.html">
+                        Biblioteca
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a class="text-zinc-200 rounded-md hover:text-yellow-500 transition-colors block"
+                        href="#diferencas">
+                        Frameworks
+                </li>
+                <li class="px-2">
+                    <a class="text-zinc-200 rounded-md  hover:text-yellow-500 transition-colors block"
+                        href="#motivacao">
+                        Diferenças
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a class="text-zinc-200 rounded-md hover:text-yellow-500 transition-colors block"
+                        href="#escola-piloto">
+                        Escola Piloto
+                    </a>
+                </li>
+                <li class="px-2">
+                    <a class="text-zinc-200 rounded-md hover:text-yellow-500 transition-colors block"
+                        href="#desenvolvedores">
+                        Desenvolvedores
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pt-40 w-screen h-auto flex flex-col justify-center items-center">
+        <!--Seção Principal-->
+        <section class="flex w-full h-auto justify-center flex-wrap overflow-x-hidden">
+            <div class="w-full flex justify-evenly gap-16 items-center mt-0 m-12">
+                <div class="w-[30rem] flex-col flex justify-center">
+                    <h2 class="text-4xl font-bold text-white pb-6 ">
+                        O que é uma <span class="text-yellow-400">Biblioteca?</span>
+                    </h2>
+                    <p class="text-zinc-300 text-justify">
+                        Uma biblioteca é um conjunto de funções, métodos e classes pré-compiladas que podem ser
+                        utilizadas para realizar tarefas específicas. Essas tarefas podem variar desde operações
+                        básicas, como manipulação de strings, até operações mais complexas, como processamento de imagem
+                        ou conexão a um banco de dados.
+                    </p>
+                </div>
+                <img class="w-96" src="/imgs/undraw_bookshelves_re_lxoy.svg" alt="">
+            </div>
+        </section>
+        <section class="flex items-center py-20 w-full h-auto flex-col overflow-x-hidden">
+            <h3 class="text-3xl font-bold text-white pb-8 ">Exemplos de bibliotecas <span
+                    class="text-teal-400">Python</span> </h3>
+            <ol class="list-decimal bg-zinc-900/50 border-zinc-800 border-2 my-10 rounded-3xl px-10 py-3 text-white">
+                <li class="py-4">
+                    <h4 class="text-xl font-bold text-teal-300 pb-2"><a href="https://numpy.org/">Numpy</a></h4>
+                    <p class="w-[38rem]">Uma biblioteca fundamental para computação numérica em Python. Oferece suporte
+                        para arrays multidimensionais e funções matemáticas de alto nível para realizar operações
+                        eficientes em grandes conjuntos de dados.</p>
+                </li>
+                <li class="py-4">
+                    <h4 class="text-xl font-bold text-teal-300 pb-2"><a href="https://numpy.org/">Pandas</a></h4>
+                    <p class="w-[38rem]">Uma biblioteca de análise de dados que fornece estruturas de dados e
+                        ferramentas para manipulação e análise de dados tabulares. É amplamente usado em ciência de
+                        dados e análise de dados.</p>
+                </li>
+                <li class="py-4">
+                    <h4 class="text-xl font-bold text-teal-300 pb-2"><a href="https://numpy.org/">Matplotlib</a></h4>
+                    <p class="w-[38rem]">Uma biblioteca para criação de gráficos 2D em Python. É frequentemente usado
+                        para visualização de dados e produção de gráficos de alta qualidade em diversos formatos.</p>
+                </li>
+            </ol>
+            <h3 class="text-3xl font-bold text-white pb-8 ">Usando a Biblioteca <span class="text-teal-400">Math</span>
+            </h3>
+            <p class="w-[38rem] text-white ">Nesse exemplo vamos calcular o fatorial do número 5 e mostrar a diferença
+                entre python puro e usando a biblioteca <span class="text-teal-400 font-bold">Math.</span></p>
+            <h3 class="text-3xl pt-12 font-bold text-white pb-8 ">Usando Python puro:</h3>
+            <img class="w-1/2" src="/imgs/fatorial2.img" alt="img">
+            <h3 class="text-3xl pt-12 font-bold text-white pb-8 ">Usando a biblioteca:</h3>
+            <img class="w-1/2" src="/imgs/fatorial.img" alt="img">
+            <p class="w-[38rem] py-10 text-white ">Com isso Vimos a diferença e a importancia de usar uma biblioteca.
+                Com ela podemos deixar nosso código mais organizado, limpo e com menos linhas, sendo assim muito mais
+                fácil para um programador entender o código.</p>
+            <h3 class="text-3xl pt-12 font-bold text-white pb-8">Como importar uma biblioteca para seu código ?</h3>
+            <p class="w-[38rem] text-white ">Para importar uma biblioteca é muito simples, no python por exemplo usamos
+                o comando <span class="text-yellow-300 font-semibold">Import <span class="text-red-600">{nome da
+                        biblioteca}</span></span><br>para entender uma biblioteca e explorar suas funcionalidades é
+                importante ler a documentação da mesma, por exemplo a biblioteca <a
+                    class="text-blue-600 font-semibold hover:text-teal-100 transition-colors"
+                    href="https://docs.python.org/3/library/math.html">Math</a> que acabamos de utilizar</p>
+        </section>
+        <!--Frameworks-->
+        <section
+            class="bg-gradient-to-b to-zinc-900 from-zinc-950 to-30 from-70 flex w-full h-auto justify-center flex-wrap overflow-x-hidden">
+            <div class="w-full flex justify-evenly flex-row-reverse gap-16 items-center mt-0 m-12">
+                <div class="w-[30rem] flex-col flex justify-center">
+                    <h2 class="text-4xl font-bold text-white pb-6 ">
+                        Agora vamos falar sobre <span class="text-cyan-300">Frameworks</span>
+                    </h2>
+                    <p class="text-zinc-300 text-justify">
+                        Um framework é uma estrutura de desenvolvimento que fornece um conjunto de ferramentas,
+                        bibliotecas, padrões e diretrizes para facilitar o desenvolvimento de software. Ele oferece uma
+                        base sobre a qual os desenvolvedores podem construir e organizar seus aplicativos de forma mais
+                        eficiente, fornecendo abstrações e funcionalidades comuns para lidar com tarefas repetitivas ou
+                        complexas.
+                    </p>
+                </div>
+                <img class="w-96" src="/imgs/undraw_react_re_g3ui.svg" alt="">
+            </div>
+            <div class="p-10 w-full">
+                <h3 class="text-3xl pt-12 font-bold text-white pb-8 ">Características de um Framework </h3>
+                <div class="w-full flex flex-wrap gap-10">
+                    
+                    <div class="w-[19rem] h-[25rem] border-[1px] hover:scale-[102%] transition-transform border-zinc-700 rounded-bl-2xl rounded-tr-2xl flex flex-col items-center justify-start">
+                        <div class="w-[95%] h-5/6 mt-1 flex-col flex items-center justify-center">
+                            <h3 class="text-xl py-6 text-center font-bold text-cyan-300 pb-2">
+                                Padrões e Melhores Práticas:
+                            </h3>
+                            <p class="text-zinc-300 text-center px-4">Os frameworks frequentemente promovem padrões de
+                                design e melhores práticas de desenvolvimento, ajudando os desenvolvedores a criar
+                                aplicativos de alta qualidade e fácil manutenção. Eles fornecem uma estrutura
+                                organizacional que facilita a compreensão e a colaboração entre membros da equipe.</p>
+                        </div>
+                    </div>
+                    <div class="w-[19rem] h-[25rem] border-[1px] hover:scale-[102%] transition-transform border-zinc-700 rounded-bl-2xl rounded-tr-2xl flex flex-col items-center justify-start">
+                        <div class="w-[95%] h-5/6 mt-1 flex-col flex items-center justify-center">
+                            <h3 class="text-xl py-6 text-center font-bold text-cyan-300  pb-2">
+                                Reutilização de Código: 
+                            </h3>
+                            <p class="text-zinc-300 text-center px-4">Os frameworks geralmente incluem componentes reutilizáveis, como módulos, bibliotecas e plugins, que podem ser facilmente integrados em diferentes partes do aplicativo. Isso promove a reutilização de código e reduz a duplicação de esforços de desenvolvimento.</p>
+                        </div>
+                    </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-stone-950 flex justify-center pt-3 items-center w-screen h-auto flex-col pb-6">
+            <div class="w-auto mx-auto pb-8 pt-3 flex flex-col items-center">
+                <div class="flex items-center flex-col">
+                    <a class="flex items-center mb-4 phone:mb-0" href="#">
+                        <span class="self-center text-2xl font-semibold  text-white">
+                            Bibliotecas e Frameworks
+                        </span>
+                    </a>
+                </div>
+                <hr class="my-1 border-gray-600 border-spacing-1 w-screen" />
+                <span class="block text-sm text-gray-500 phone:text-center dark:text-gr0 pt-3">
+                    <a href="#">
+                        Erica Beatriz n° 5, Gustavo Henrique n° 9
+                    </a>
+                </span>
+            </div>
+        </footer>
+</body>
+
+</html>
